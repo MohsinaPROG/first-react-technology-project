@@ -24,11 +24,12 @@ const TechnologyCard = ({
             className="h-full w-full object-contain"
           />
         </div>
-
-        <span className="rounded-full bg-purple-50 px-2.5 py-1 text-[10px] font-medium text-purple-600">
+        <span
+          className={`rounded-full px-2.5 py-1 text-[10px] font-medium shadow-sm ${technology.badgeColor} ${technology.badgeBgColor}`}>
           {technology.badge}
         </span>
       </div>
+      
 
       {/* Name */}
       <h3 className="mt-4 text-base font-bold text-gray-900">
@@ -64,25 +65,25 @@ const TechnologyCard = ({
       </div>  */}
 
       {/* Category + Difficulty + Rating */}
-<div className="mt-4 flex items-center justify-between text-[10px] text-gray-500">
-  
-  {/* Category */}
-  <span className="rounded-full bg-gray-100 px-2.5 py-1 font-medium text-gray-600">
-    {technology.category}
-  </span>
+      <div className="mt-4 flex items-center justify-between text-[10px] text-gray-500">
 
-  {/* Difficulty */}
-  <span className="font-medium text-gray-700">
-    {technology.difficulty}
-  </span>
+        {/* Category */}
+        <span className="rounded-full bg-gray-100 px-2.5 py-1 font-medium text-gray-600">
+          {technology.category}
+        </span>
 
-  {/* Rating */}
-  <span className="flex items-center gap-1">
-    <FaStar className="text-yellow-400" />
-    {technology.rating}
-  </span>
+        {/* Difficulty */}
+        <span className="font-medium text-gray-700">
+          {technology.difficulty}
+        </span>
 
-</div>
+        {/* Rating */}
+        <span className="flex items-center gap-1">
+          <FaStar className="text-yellow-400" />
+          {technology.rating}
+        </span>
+
+      </div>
 
 
 
@@ -91,11 +92,10 @@ const TechnologyCard = ({
       <button
         onClick={() => onAdd(technology)}
         disabled={isAdded}
-        className={`mt-4 w-full rounded-md py-2.5 text-xs font-semibold transition ${
-          isAdded
+        className={`mt-4 w-full rounded-md py-2.5 text-xs font-semibold transition ${isAdded
             ? "cursor-not-allowed bg-gray-200 text-gray-500"
             : "bg-gray-950 text-white hover:bg-gray-800"
-        }`}
+          }`}
       >
         {isAdded ? "✓ Added to Stack" : "Add to Stack"}
       </button>

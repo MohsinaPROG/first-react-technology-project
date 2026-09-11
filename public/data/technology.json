@@ -7,7 +7,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/React.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
+    "badge": "Popular",
+    "badgeColor": "text-cyan-600",
+    "badgeBgColor": "bg-cyan-50"
   },
   {
     "id": "vue",
@@ -17,7 +19,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Vue.js.svg",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
-    "badge": "Versatile"
+    "badge": "Versatile",
+    "badgeColor": "text-emerald-600",
+    "badgeBgColor": "bg-emerald-50"
   },
   {
     "id": "svelte",
@@ -27,7 +31,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Svelte.svg",
     "rating": 4.7,
     "difficulty": "Intermediate",
-    "badge": "Fast"
+    "badge": "Fast",
+    "badgeColor": "text-orange-600",
+    "badgeBgColor": "bg-orange-50"
   },
   {
     "id": "nextjs",
@@ -46,7 +52,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Node.js.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Popular"
+    "badge": "Popular",
+    "badgeColor": "text-green-600",
+    "badgeBgColor": "bg-green-50"
   },
   {
     "id": "postgresql",
@@ -56,27 +64,33 @@
     "icon": "https://icon.icepanel.io/Technology/svg/PostgresSQL.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
-    "badge": "Top SQL"
+    "badge": "Top SQL",
+    "badgeColor": "text-blue-600",
+    "badgeBgColor": "bg-blue-50"
   },
   {
     "id": "redis",
     "name": "Redis",
     "category": "Database",
-    "description": "In-memory data structure store used as a high-speed database,cache, and message broker.",
+    "description": "In-memory data structure store used as a high-speed database, cache, and message broker.",
     "icon": "https://icon.icepanel.io/Technology/svg/Redis.svg",
     "rating": 4.7,
     "difficulty": "Intermediate",
-    "badge": "Cache"
+    "badge": "Cache",
+    "badgeColor": "text-red-600",
+    "badgeBgColor": "bg-red-50"
   },
   {
     "id": "javascript",
     "name": "JavaScript",
     "category": "Language",
-    "description": "The versatile ,ubiquitous scripting language powering dynamic behavior across the web.",
+    "description": "The versatile, ubiquitous scripting language powering dynamic behavior across the web.",
     "icon": "https://icon.icepanel.io/Technology/svg/JavaScript.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Ubiquitous"
+    "badge": "Ubiquitous",
+    "badgeColor": "text-yellow-600",
+    "badgeBgColor": "bg-yellow-50"
   },
   {
     "id": "typescript",
@@ -86,9 +100,11 @@
     "icon": "https://icon.icepanel.io/Technology/svg/TypeScript.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
-    "badge": "Essential"
+    "badge": "Essential",
+    "badgeColor": "text-blue-600",
+    "badgeBgColor": "bg-blue-50"
   },
-    {
+  {
     "id": "java",
     "name": "Java",
     "category": "Language",
@@ -96,7 +112,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Java.svg",
     "rating": 4.7,
     "difficulty": "Intermediate",
-    "badge": "Robust"
+    "badge": "Robust",
+    "badgeColor": "text-red-600",
+    "badgeBgColor": "bg-red-50"
   },
   {
     "id": "tailwind",
@@ -106,7 +124,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Modern"
+    "badge": "Modern",
+    "badgeColor": "text-sky-600",
+    "badgeBgColor": "bg-sky-50"
   },
   {
     "id": "docker",
@@ -116,6 +136,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Docker.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Containers"
+    "badge": "Containers",
+    "badgeColor": "text-blue-600",
+    "badgeBgColor": "bg-blue-50"
   }
 ]
