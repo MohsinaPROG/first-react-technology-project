@@ -5,7 +5,7 @@ const Banner = () => {
 
         {/* Left */}
         <div>
-          <h1 className="text-4xl font-extrabold leading-tight text-gray-900 md:text-5xl">
+          <h1 className="text-5xl font-extrabold leading-tight text-gray-900 md:text-5xl">
             Build Your Ideal
             <br />
             <span className="gradient-text">

@@ -13,7 +13,7 @@ const Footer = () => {
                 {/* Brand */}
                 <div className="md:col-span-1">
                     <div className="flex items-center gap-2 font-bold text-gray-900">
-                        <div className="brand-gradient flex h-7 w-7 items-center justify-center rounded-md text-xs text-white">
+                        <div className="brand-gradient flex h-4 w-7 items-center justify-center rounded-md text-xs text-white">
                             DS
                         </div>
 
@@ -25,6 +25,7 @@ const Footer = () => {
                     <p className="mt-4 max-w-xs text-xs leading-5 text-gray-500">
                         Curated tools, technologies, and resources for developers building
                         modern software.
+
                     </p>
 
                     <div className="mt-5 flex gap-3 text-gray-800 font-size-small">
