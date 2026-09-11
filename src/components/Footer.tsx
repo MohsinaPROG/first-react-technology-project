@@ -105,10 +105,10 @@ const Footer = () => {
                         © 2026 Dev Stack. All rights reserved.
                     </p>
 
-                    {/* <div className="flex gap-4">
+                    <div className="flex gap-4">
                         <a href="#">Privacy</a>
                         <a href="#">Terms</a>
-                    </div> */}
+                    </div>
                 </div>
             </div>
 
