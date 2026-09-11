@@ -1,3 +1,4 @@
+
 import { FaStar } from "react-icons/fa";
 import type { Technology } from "../types/technology";
 
@@ -17,6 +18,8 @@ const TechnologyCard = ({
 
       {/* Top */}
       <div className="flex items-start justify-between">
+
+        {/* Icon */}
         <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gray-50 p-2">
           <img
             src={technology.icon}
@@ -24,12 +27,18 @@ const TechnologyCard = ({
             className="h-full w-full object-contain"
           />
         </div>
-        <span
-          className={`rounded-full px-2.5 py-1 text-[10px] font-medium shadow-sm ${technology.badgeColor} ${technology.badgeBgColor}`}>
-          {technology.badge}
-        </span>
+
+        {/* Badge */}
+        {technology.badge && (
+          <span
+            className={`rounded-full px-2.5 py-1 text-[10px] font-medium shadow-sm ${
+              technology.badgeColor
+            } ${technology.badgeBgColor}`}
+          >
+            {technology.badge}
+          </span>
+        )}
       </div>
-      
 
       {/* Name */}
       <h3 className="mt-4 text-base font-bold text-gray-900">
@@ -40,29 +49,6 @@ const TechnologyCard = ({
       <p className="mt-2 min-h-[48px] text-xs leading-5 text-gray-500">
         {technology.description}
       </p>
-
-
-
-      {/* Category */}
-      {/* <div className="mt-4">
-        <span className="rounded-full bg-gray-100 px-2.5 py-1 text-[10px] font-medium text-gray-600">
-          {technology.category}
-        </span>
-      </div> */}
-
-      {/* Difficulty + rating */}
-      {/* <div className="mt-4 flex items-center justify-between text-[10px] text-gray-500">
-        <span>
-          <span className="font-medium text-gray-700">
-            {technology.difficulty}
-          </span>
-        </span>
-
-        <span className="flex items-center gap-1">
-          <FaStar className="text-yellow-400" />
-          {technology.rating}
-        </span>
-      </div>  */}
 
       {/* Category + Difficulty + Rating */}
       <div className="mt-4 flex items-center justify-between text-[10px] text-gray-500">
@@ -85,20 +71,19 @@ const TechnologyCard = ({
 
       </div>
 
-
-
-
-      {/* Add button */}
+      {/* Add Button */}
       <button
         onClick={() => onAdd(technology)}
         disabled={isAdded}
-        className={`mt-4 w-full rounded-md py-2.5 text-xs font-semibold transition ${isAdded
+        className={`mt-4 w-full rounded-md py-2.5 text-xs font-semibold transition ${
+          isAdded
             ? "cursor-not-allowed bg-gray-200 text-gray-500"
             : "bg-gray-950 text-white hover:bg-gray-800"
-          }`}
+        }`}
       >
         {isAdded ? "✓ Added to Stack" : "Add to Stack"}
       </button>
+
     </div>
   );
 };
