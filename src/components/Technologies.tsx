@@ -1,5 +1,5 @@
-import TechnologyCard from "./TechnologyCard.tsx";
-import YourStack from "./YourStack.tsx";
+import TechnologyCard from "./TechnologyCard";
+import YourStack from "./YourStack";
 import type { Technology } from "../types/technology";
 
 interface TechnologiesProps {
@@ -17,32 +17,26 @@ const Technologies = ({
   onRemove,
   onRemoveAll,
 }: TechnologiesProps) => {
-
   return (
-    <section
-      id="technologies"
-      className="bg-white py-10 lg:py-14"
-    >
+    <section id="technologies" className="bg-white py-10 lg:py-14">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
-        {/* Section heading */}
+        {/* Heading */}
         <div className="mb-8">
           <h2 className="text-2xl font-extrabold text-gray-900">
             Explore the{" "}
-            <span className="gradient-text">
-              Technologies
-            </span>
+            <span className="gradient-text">Technologies</span>
           </h2>
 
           <p className="mt-2 text-xs text-gray-500">
-            Pick the technology category to build your ideal stack.
+            Pick one technology per category to build your ideal stack.
           </p>
         </div>
 
-        {/* Main layout */}
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1fr)_280px]">
+        {/* Cards + Your Stack */}
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_280px]">
 
-          {/* Technology cards */}
+          {/* Technology Cards */}
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
             {technologies.map((technology) => (
               <TechnologyCard
@@ -56,7 +50,7 @@ const Technologies = ({
             ))}
           </div>
 
-          {/* Sidebar */}
+          {/* Your Stack */}
           <YourStack
             stack={stack}
             onRemove={onRemove}

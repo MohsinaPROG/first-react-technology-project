@@ -39,7 +39,7 @@ const Banner = () => {
         {/* Right */}
         <div className="flex justify-center">
           <img
-            src="/assets/hero.png"
+            src="/assets/banner-stack.png"
             alt="Development technology stack"
             className="w-full max-w-md object-contain"
           />
