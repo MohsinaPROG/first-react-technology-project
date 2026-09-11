@@ -18,17 +18,17 @@ const Technologies = ({
   onRemoveAll,
 }: TechnologiesProps) => {
   return (
-    <section id="technologies" className="bg-white py-10 lg:py-14">
+    <section id="technologies" className="bg-white pb-10 lg:pb-14">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
         {/* Heading */}
-        <div className="mb-8">
+        <div className="mb-10">
           <h2 className="text-4xl font-extrabold text-gray-900">
             Explore the{" "}
             <span className="gradient-text">Technologies</span>
           </h2>
 
-          <p className="mt-2 text-xm text-gray-500">
+          <p className="mt-4 text-xm text-gray-500">
             Pick one technology per category to build your ideal stack.
           </p>
         </div>

@@ -5,7 +5,7 @@ const Banner = () => {
 
         {/* Left */}
         <div>
-          <h1 className="text-5xl font-extrabold leading-tight text-gray-900 md:text-5xl">
+          <h1 className="text-9xl font-extrabold leading-tight text-gray-900 md:text-5xl">
             Build Your Ideal
             <br />
             <span className="gradient-text">
@@ -13,10 +13,10 @@ const Banner = () => {
             </span>
           </h1>
 
-          <p className="mt-5 max-w-lg text-sm leading-6 text-gray-500">
+          <p className="mt-5 max-w-lg text-lg leading-6 text-gray-500">
             Explore frontend, backend, database, and tooling options,
-            compare them side by side, and put together the stack that fits
-            your next project.
+            compare them side by side, and put together the stack that fits your
+            next project.
           </p>
 
           <div className="mt-7 flex flex-wrap gap-3">
