@@ -23,12 +23,12 @@ const Technologies = ({
 
         {/* Heading */}
         <div className="mb-8">
-          <h2 className="text-2xl font-extrabold text-gray-900">
+          <h2 className="text-4xl font-extrabold text-gray-900">
             Explore the{" "}
             <span className="gradient-text">Technologies</span>
           </h2>
 
-          <p className="mt-2 text-xs text-gray-500">
+          <p className="mt-2 text-xm text-gray-500">
             Pick one technology per category to build your ideal stack.
           </p>
         </div>

@@ -40,17 +40,18 @@ const TechnologyCard = ({
         {technology.description}
       </p>
 
+
+
       {/* Category */}
-      <div className="mt-4">
+      {/* <div className="mt-4">
         <span className="rounded-full bg-gray-100 px-2.5 py-1 text-[10px] font-medium text-gray-600">
           {technology.category}
         </span>
-      </div>
+      </div> */}
 
       {/* Difficulty + rating */}
-      <div className="mt-4 flex items-center justify-between text-[10px] text-gray-500">
+      {/* <div className="mt-4 flex items-center justify-between text-[10px] text-gray-500">
         <span>
-          Difficulty:{" "}
           <span className="font-medium text-gray-700">
             {technology.difficulty}
           </span>
@@ -60,7 +61,31 @@ const TechnologyCard = ({
           <FaStar className="text-yellow-400" />
           {technology.rating}
         </span>
-      </div>
+      </div>  */}
+
+      {/* Category + Difficulty + Rating */}
+<div className="mt-4 flex items-center justify-between text-[10px] text-gray-500">
+  
+  {/* Category */}
+  <span className="rounded-full bg-gray-100 px-2.5 py-1 font-medium text-gray-600">
+    {technology.category}
+  </span>
+
+  {/* Difficulty */}
+  <span className="font-medium text-gray-700">
+    {technology.difficulty}
+  </span>
+
+  {/* Rating */}
+  <span className="flex items-center gap-1">
+    <FaStar className="text-yellow-400" />
+    {technology.rating}
+  </span>
+
+</div>
+
+
+
 
       {/* Add button */}
       <button
