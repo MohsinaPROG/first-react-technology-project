@@ -20,7 +20,7 @@ const App = () => {
       try {
         setLoading(true);
 
-        const response = await fetch("/data/technologies.json");
+        const response = await fetch("/data/technology.json");
 
         if (!response.ok) {
           throw new Error("Failed to load technologies");
